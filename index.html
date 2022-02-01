@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Wordle Ruiner</title>
+</head>
+<body>
+  <p>Letters that have been used: <input type="text" id="input-omitted"></p>
+  <p>Letters that appear somewhere: <input type="text" id="input-counted"></p>
+  <p>Letters with known positions: <input type="text" id="input-known" value="#####" maxlength="5" placeholder="#####"></p>
+  <p>Use full Wordle List (Includes non-answer words): <input type="checkbox" id="input-all"></p>
+  <button onclick="solve()">Get words!</button>
+  <br>
+  <p>There are <span id="output-count">???</span> valid words.</p>
+  <p id="output-raw">Click the button!</p>
+
+  <script src="script/allWords.js"></script>
+  <script src="script/ansWords.js"></script>
+  <script src="script/main.js"></script>
+</body>
+</html>
